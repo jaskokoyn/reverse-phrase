@@ -9,11 +9,11 @@ export class AppComponent {
   text = '';
   reversedText = '';
 
-  onClickReverse () {
+  onClickReverse() {
     this.reversedText = this.text.split('').reverse().join('');
   }
 
-  onInputText (value: string) {
+  onInputText(value: string) {
     this.text = value;
   }
 }

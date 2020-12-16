@@ -6,11 +6,11 @@
         <label>Text</label>
         <input (input)="onInputText($event.target.value)" class="form-control" />
       </div>
-      
+
       <div class="form-group">
         <button (click)="onClickReverse()" [disabled]="!text.length" class="btn btn-primary">Submit</button>
       </div>
-      
+
       <div *ngIf="reversedText.length">
         Reversed Text: {{ reversedText }}
       </div>
